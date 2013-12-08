@@ -1,0 +1,8 @@
+python hex -> syx file command (from root midipal folder:
+python tools\hex2sysex\hex2sysex.py --syx --device_id 3 --page_size 64 --output_file build\midipal_fw_new.syx build\midipal\midipal.hex
+
+
+RESOURCE_COMPILER = avrlib/tools/resources_compiler.py
+python $(RESOURCE_COMPILER) $(RESOURCES)/resources.py
+from midipal-mod dir:
+python ./avrlib/tools/resources_compiler.py ./midipal/resourcs/resources.py
